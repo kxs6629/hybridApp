@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Hybrid App</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+   <script src="cordova.js"></script>
+   <script src="http://maps.google.com/maps/api/js?key=AIzaSyCbvJEg011URR_i_i0Bfettb3g0-0SimEs&callback=initmap"></script>
+   <script src="js/geo.js"></script>
+   <script src="js/map.js"></script>
+</head>
+<body>
+    <h1>Location Information</h1>
+   <div id="map-canvas"><h3>Loading map. Please wait...</h3></div>
+   <div id="btnHolder">
+
+      <p class="updateBtn" id="connBtn" onclick="checkConn()">Network State:</p>
+      <p class="updateBtn" id="latBtn" onclick="getLat()">Latitdue:</p>
+      <p class="updateBtn" id="longBtn" onclick="getLong()">Longitdue:</p>
+      
+   </div>
+   <script src="js/connection.js"></script>
+</body>
+</html>
